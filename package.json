@@ -3,7 +3,22 @@
   "version": "1.1.123",
   "description": "PassKit TypeScript gRPC SDK",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
-    "@grpc/grpc-js": "^1.12.6"
+    "@grpc/grpc-js": "^1.12.6",
+    "@types/google-protobuf": "^3.15.12",
+    "google-protobuf": "^4.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }
